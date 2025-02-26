@@ -3,7 +3,7 @@
 ## Part 1 Refining Git History
 
 ### Ex1 Missing File fix
-
+```bash
 gymumuco@umucos-iMac-2 Git-Advanced-Draft % git status && git log
 On branch main
 Your branch is based on 'origin/main', but the upstream is gone.
@@ -112,17 +112,18 @@ Date:   Wed Feb 26 13:10:45 2025 +0200
 
     chore: Create initial file
 ~
-
+```
 
 #### Commit
+```bash
  gymumuco@umucos-iMac-2 Git-Advanced-Draft % git add test4.md && git commit -m "chore: Create fourth file"
 [main c74d7cf] chore: Create fourth file
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 test4.md
 
-
+```
 ### Ex2 Edit commit History
-
+```bash
 gymumuco@umucos-iMac-2 Git-Advanced-Draft % rm -fr ".git/rebase-merge"
 gymumuco@umucos-iMac-2 Git-Advanced-Draft % git rebase -i HEAD~3      
 [detached HEAD f71bba0] chore: Create second file
@@ -130,10 +131,10 @@ gymumuco@umucos-iMac-2 Git-Advanced-Draft % git rebase -i HEAD~3
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 test2.md
 Successfully rebased and updated refs/heads/main.
-
+```
 
 ### Ex3 Keeping History Tidy - Squashing Commits
-
+```bash
 gymumuco@umucos-iMac-2 Git-Advanced-Draft % git rebase -i HEAD~3
 [detached HEAD 0a7a6fd] This is the squash file
  Date: Wed Feb 26 13:10:45 2025 +0200
@@ -145,3 +146,4 @@ gymumuco@umucos-iMac-2 Git-Advanced-Draft % git log --oneline
 74f7954 (HEAD -> main) chore: Create fourth file
 0a7a6fd This is the squash file
 3520fdf chore: Create initial file
+```
