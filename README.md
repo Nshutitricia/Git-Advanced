@@ -130,3 +130,18 @@ gymumuco@umucos-iMac-2 Git-Advanced-Draft % git rebase -i HEAD~3
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 test2.md
 Successfully rebased and updated refs/heads/main.
+
+
+### Ex3 Keeping History Tidy - Squashing Commits
+
+gymumuco@umucos-iMac-2 Git-Advanced-Draft % git rebase -i HEAD~3
+[detached HEAD 0a7a6fd] This is the squash file
+ Date: Wed Feb 26 13:10:45 2025 +0200
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test2.md
+ create mode 100644 test3.md
+Successfully rebased and updated refs/heads/main.
+gymumuco@umucos-iMac-2 Git-Advanced-Draft % git log --oneline
+74f7954 (HEAD -> main) chore: Create fourth file
+0a7a6fd This is the squash file
+3520fdf chore: Create initial file
