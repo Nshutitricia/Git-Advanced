@@ -121,5 +121,12 @@ Date:   Wed Feb 26 13:10:45 2025 +0200
  create mode 100644 test4.md
 
 
+### Ex2 Edit commit History
 
-
+gymumuco@umucos-iMac-2 Git-Advanced-Draft % rm -fr ".git/rebase-merge"
+gymumuco@umucos-iMac-2 Git-Advanced-Draft % git rebase -i HEAD~3      
+[detached HEAD f71bba0] chore: Create second file
+ Date: Wed Feb 26 13:10:45 2025 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test2.md
+Successfully rebased and updated refs/heads/main.
